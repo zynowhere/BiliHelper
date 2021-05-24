@@ -18,43 +18,17 @@ BILIBILI-HELPER
 ## 工具简介
 
 
-这是一个利用 Linux Crontab ,云函数， Docker 等方式实现哔哩哔哩（Bilibili）每日任务投币，点赞，分享视频，直播签到，银瓜子兑换硬币，漫画每日签到，简单配置即可每日轻松获取 65 经验值，快来和我一起成为
-Lv6 吧\~\~\~\~
+利用 Linux Crontab , 云函数， Docker 等方式实现Bilibili每日任务
 
-**如果觉得好用，顺手点个 Star 吧 ❤**
 
-**仓库地址：[JunzhouLiu/BILIBILI-HELPER](https://github.com/JunzhouLiu/BILIBILI-HELPER)**
 
-**B 站赛事预测助手已发布，每天自动参与 KPL，LPL 赛事预测，赚取硬币。**
 
-**仓库地址：[JunzhouLiu/bilibili-match-prediction](https://github.com/JunzhouLiu/bilibili-match-prediction)**
 
-**请不要滥用相关 API，让我们一起爱护 B 站 ❤**
 
-<div align="center">
 
-[也可点击此处一键加群](https://qm.qq.com/cgi-bin/qm/qr?k=m_M1Fydi3MvrVAEM0Sp6hDfZF4N2SpXU&jump_from=webapi)
 
-qq 群二维码
 
-![qq群二维码](docs/IMG/qqgroup.png)
 
-</div>
-
-## 功能列表
-
-- [x] 每天上午 9 点 10 分自动开始任务。_【运行时间可自定义】_
-- [x] 哔哩哔哩漫画每日自动签到，自动阅读 1 章节 。
-- [x] 每日自动从热门视频中随机观看 1 个视频，分享一个视频。
-- [x] 每日从热门视频中选取 5 个进行智能投币 _【如果投币不能获得经验了，则不会投币】_
-- [x] 投币支持下次一定啦，可自定义每日投币数量。_【如果检测到你已经投过币了，则不会投币】_
-- [x] 大会员月底使用快到期的 B 币券，给自己充电，一点也不会浪费哦，默认开启。_【已支持给指定 UP 充电】_
-- [x] 大会员月初 1 号自动领取每月 5 张 B 币券和福利。
-- [x] 每日哔哩哔哩直播自动签到，领取签到奖励。_【直播你可以不看，但是奖励咱们一定要领】_
-- [x] Linux 用户支持自定义配置了。
-- [x] 投币策略更新可配置投币喜好。_【可配置优先给关注的 up 投币】_
-- [x] 自动送出即将过期的礼物。 _【默认开启，未更新到新版本的用户默认关闭】_
-- [x] 支持推送执行结果到微信，钉钉，飞书等
 
 [点击快速开始使用](#使用说明)
 
@@ -96,9 +70,6 @@ qq 群二维码
 
 ![图示](docs/IMG/20201012001307.png)
 
-**请各位使用 Actions 时务必遵守 Github 条款。不要滥用 Actions 服务。**
-
-**Please be sure to abide by the Github terms when using Actions. Do not abuse the Actions service.**
 
 ### 一、使用 腾讯云函数
 
@@ -192,9 +163,7 @@ java -jar /home/BILIBILI-HELPER.jar DEDEUSERID SESSDATA BILI_JCT SCKEY >> /var/l
 | userAgent          | 浏览器 UA            | 用户可根据部署平台配置，可根据 userAgent 参数列表自由选取                |
 | skipDailyTask      | [false,true]         | 是否跳过每日任务，默认`true`,如果关闭跳过每日任务，请改为`false`         |
 
-**tips:如果你没有上传过视频并开启充电计划，充电会失败，B 币券会浪费。此时建议配置为给指定的 up 主充电。欢迎给即将秃头的我充电 uid：[14602398][32] **
 
-[32]: https://space.bilibili.com/14602398
 
 userAgent 可选参数列表
 
@@ -274,20 +243,15 @@ _特别注意：需要先与机器人之间创建会话，机器人才能下发�
 
 参阅 [Pull APP](https://github.com/apps/pull)
 
-### 常见问题解答
 
 ## 免责声明
 
-1. 本工具不会记录你的任何敏感信息，也不会上传到任何服务器上。（例如用户的 cookies 数据，cookies 数据均存在 Actions Secrets 中或者用户自己的设备上）
-2. 本工具不会记录任何执行过程中来自 b 站的数据信息，也不会上传到任何服务器上。（例如 av 号，bv 号，用户 uid 等）。
-3. 本工具执行过程中产生的日志，仅会在使用者自行配置推送渠道后进行推送。日志中不包含任何用户敏感信息。
-4. 如果有人修改了本项目（或者直接使用本项目）盈利恰饭，那和我肯定没关系，我开源的目的单纯是技术分享。
-5. 如果你使用了第三方修改的，打包的本工具代码，那你可得注意了，指不定人就把你的数据上传到他自己的服务器了，这可和我没关系。（**网络安全教育普及任重而道远**）
-6. 本工具源码仅在[JunzhouLiu/BILIBILI-HELPER](https://github.com/JunzhouLiu/BILIBILI-HELPER)开源，其余的地方的代码均不是我提交的，可能是抄我的，借鉴我的，但绝对不是我发布的，出问题和我也没关系。
-7. 我开源本工具的代码仅仅是技术分享，没有任何丝毫的盈利赚钱目的，如果你非要给我打赏/充电，那我就是网络乞丐，咱们不构成任何雇佣，购买关系的交易。
-8. 本项目不会增加类似于自动转发抽奖，秒杀，下载版权受限视频等侵犯 UP 主/B 站权益的功能，开发这个应用的目的是单纯的技术分享。下游分支开发者/使用者也请不要滥用相关功能。
-9. 本项目欢迎其他开发者参与贡献，基于本工具的二次开发，使用其他语言重写都没有什么问题，能在技术上给你带来帮助和收获就很好.
-10. 本项目遵守[MIT License](https://github.com/JunzhouLiu/BILIBILI-HELPER/blob/main/LICENSE)，请各位知悉。
+1. 本工具源码仅在[JunzhouLiu/BILIBILI-HELPER](https://github.com/JunzhouLiu/BILIBILI-HELPER)开源。
+2. 本项目遵守[MIT License](https://github.com/JunzhouLiu/BILIBILI-HELPER/blob/main/LICENSE)，请各位知悉。
+
+**仓库地址：[JunzhouLiu/BILIBILI-HELPER](https://github.com/JunzhouLiu/BILIBILI-HELPER)**
+
+**仓库地址：[JunzhouLiu/bilibili-match-prediction](https://github.com/JunzhouLiu/bilibili-match-prediction)**
 
 ## API 参考列表
 
@@ -313,7 +277,3 @@ _特别注意：需要先与机器人之间创建会话，机器人才能下发�
 ## License
 
 [![FOSSA Status](https://app.fossa.com/api/projects/git%2Bgithub.com%2FJunzhouLiu%2FBILIBILI-HELPER.svg?type=large)](https://app.fossa.com/projects/git%2Bgithub.com%2FJunzhouLiu%2FBILIBILI-HELPER?ref=badge_large)
-
-## Stargazers over time
-
-[![Stargazers over time](https://starchart.cc/JunzhouLiu/BILIBILI-HELPER.svg)](https://starchart.cc/JunzhouLiu/BILIBILI-HELPER)
