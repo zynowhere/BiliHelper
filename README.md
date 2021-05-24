@@ -33,13 +33,12 @@ BILIBILI-HELPER
     - [PushPlus(Push+)](#pushpluspush)
   - [更新和帮助](#更新和帮助)
     - [使用 Pull APP［推荐］](#使用-pull-app推荐)
-    - [常见问题解答](#常见问题解答)
   - [免责声明](#免责声明)
   - [API 参考列表](#api-参考列表)
   - [基于本项目的衍生项目](#基于本项目的衍生项目)
   - [致谢](#致谢)
   - [License](#license)
-  - [Stargazers over time](#stargazers-over-time)
+  
 
 ## 使用说明
 
@@ -180,8 +179,6 @@ tips:从1.4.1版本开始，随机视频投币有一定的概率会将硬币投�
 1. 前往 [sct.ftqq.com](https://sct.ftqq.com/sendkey)点击登入，创建账号。
 2. 点击点[SendKey](https://sct.ftqq.com/sendkey) ，生成一个 Key。将其增加到 Github Secrets 中，变量名为 `SERVERPUSHKEY`
 3. [配置消息通道](https://sct.ftqq.com/forward) ，选择方糖服务号，保存即可。
-4. 推送效果展示
-   ![图示](docs/IMG/wechatMsgPush.png)
 
 **
 旧版推送渠道[sc.ftqq.com](http://sc.ftqq.com/9.version0) 即将与 4 月底下线，请前往[sct.ftqq.com](https://sct.ftqq.com/sendkey)生成`Turbo`版本的`Key`，注意，申请 Turbo 版 Key 后请配置消息通道，如果想沿用以前的推送方式，选择方糖服务号即可**
