@@ -23,7 +23,6 @@ BILIHELPER
     - [PushPlus(Push+)](#pushpluspush)
   - [更新和帮助](#更新和帮助)
     - [使用 Pull APP［推荐］](#使用-pull-app推荐)
-  - [免责声明](#免责声明)
   - [API 参考列表](#api-参考列表)
   - [基于本项目的衍生项目](#基于本项目的衍生项目)
   - [致谢](#致谢)
@@ -49,9 +48,8 @@ BILIHELPER
 
 ### 二、使用 Docker
 
-请自行参阅 [Issues/75#issuecomment-731705657][28] 和[基于本项目的衍生项目](#基于本项目的衍生项目)。
+请自行参阅[基于本项目的衍生项目](#基于本项目的衍生项目)。
 
-[28]: https://github.com/JunzhouLiu/BILIBILI-HELPER/issues/75#issuecomment-731705657
 
 ### 三、使用 Linux Crontab 方式
 
@@ -64,11 +62,9 @@ wget https://raw.githubusercontent.com/JunzhouLiu/BILIBILI-HELPER/main/setup.sh 
 **ps：注意，如果使用自定义配置，请将`config.json`和 jar 包放置在同一目录(使用 setup.sh 安装则需要将`config.json`放置到`{HOME}/BILIBILI-HELPER`)，`v1.2.2`
 之后的版本`release`中都会携带一份`config.json`。**
 
-2. 除此之外，也可以通过点击 [BILIBILI-HELPER/release][30]，下载已发布的版本，解压后将 jar 包手动上传到 Linux 服务器，使用 crontab 完成定时执行，如果使用`crontab`
-   请记得`source /etc/profile`和`source ~/.bashrc`,建议直接使用仓库提供的[`start.sh`][31]脚本,注意修改脚本的 jar 包路径和 cookies 参数。
+2. 除此之外，也可以通过点击 [BILIBILI-HELPER/release]，下载已发布的版本，解压后将 jar 包手动上传到 Linux 服务器，使用 crontab 完成定时执行，如果使用`crontab`
+   请记得`source /etc/profile`和`source ~/.bashrc`,建议直接使用仓库提供的[`start.sh`]脚本,注意修改脚本的 jar 包路径和 cookies 参数。
 
-[30]: https://github.com/JunzhouLiu/BILIBILI-HELPER/releases/latest
-[31]: https://github.com/JunzhouLiu/BILIBILI-HELPER/blob/main/start.sh
 
 **crontab 命令示例**
 
@@ -213,15 +209,6 @@ _特别注意：需要先与机器人之间创建会话，机器人才能下发�
 
 参阅 [Pull APP](https://github.com/apps/pull)
 
-
-## 免责声明
-
-1. 本工具源码仅在[JunzhouLiu/BILIBILI-HELPER](https://github.com/JunzhouLiu/BILIBILI-HELPER)开源。
-2. 本项目遵守[MIT License](https://github.com/JunzhouLiu/BILIBILI-HELPER/blob/main/LICENSE)，请各位知悉。
-
-**仓库地址：[JunzhouLiu/BILIBILI-HELPER](https://github.com/JunzhouLiu/BILIBILI-HELPER)**
-
-**仓库地址：[JunzhouLiu/bilibili-match-prediction](https://github.com/JunzhouLiu/bilibili-match-prediction)**
 
 ## API 参考列表
 
